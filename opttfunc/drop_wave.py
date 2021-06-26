@@ -5,7 +5,7 @@ import numpy as np
 import plotly.graph_objects as go
 from overrides import overrides
 
-from test_function import TestFunction
+from .test_function import TestFunction
 
 
 class DropWave(TestFunction):
