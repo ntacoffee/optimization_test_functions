@@ -16,6 +16,10 @@ class TestFunction:
         x = self._arrange_dim(x)
         return self._evaluate(x)
 
+    @property
+    def dim(self):
+        return self._dim
+
     def _arrange_dim(self, x: np.ndarray) -> np.ndarray:
         if x.ndim == 1:
             if x.shape[0] != self._dim:
